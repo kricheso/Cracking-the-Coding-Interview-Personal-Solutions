@@ -78,7 +78,7 @@ public static boolean isUnique(String input) {
   * permutation("water", "water") -> true
   * permutation("water", "river") -> false
 
-Just like in problem 1.1, we can use the ASCII code technique. See below:
+Just like in [problem 1.1](#Q1.1), we can use the ASCII code technique. See below:
 
 <img src="images/ASCIITable.png">
 
@@ -116,15 +116,12 @@ public static boolean permutation(String str1, String str2) {
 
   //Set back "scores" to zero
   for(int i=0; i<str2.length(); i++) {
-
     alphabet[str2.charAt(i)]--;
 
-    //if string 2 has a character that string 1
-    //does not have, return false
+    //if string 2 has a character that string 1 does not have, return false
     if(alphabet[str2.charAt(i)] < 0) {
       return false;
     }
-
   }
 
   return true;
