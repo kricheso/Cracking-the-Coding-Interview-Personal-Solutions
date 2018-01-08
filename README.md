@@ -7,8 +7,11 @@ The purpose of this guide is to provide in depth explainations to the solutions 
   * [Problem 1.1 - Is Unique](#Q1.1)
   * [Problem 1.2 - Check Permutation](#Q1.2)
 
+<br/>
 
-## <a name="Chapter1" />Chapter 1 - String and Arrays
+# <a name="Chapter1" />Chapter 1 - String and Arrays
+
+<br/>
 
 ## <a name="Q1.1" />Problem 1.1 - Is Unique
 #### Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
@@ -68,6 +71,7 @@ public static boolean isUnique(String input) {
 
 [Back to Top](#Top)
 
+<br/>
 
 ## <a name="Q1.2" />Problem 1.2 - Check Permutation
 #### Given two strings, write a method to decide if one is a permuation of the other. In this problem, we will assume that the comparision is case sesitive and whitespace is significant.
