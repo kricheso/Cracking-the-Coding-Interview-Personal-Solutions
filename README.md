@@ -15,6 +15,9 @@ The purpose of this guide is to provide in depth explainations to the solutions 
 
 <h1 align="center" a name="Chapter1" />Chapter 1 - String and Arrays</h1> 
 
+<br/>
+<br/>
+
 ## <a name="Q1.1" />Problem 1.1 - Is Unique
 #### Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 * isUnique("water") -> true
