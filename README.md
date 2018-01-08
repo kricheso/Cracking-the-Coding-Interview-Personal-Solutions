@@ -10,7 +10,7 @@ The purpose of this guide is to provide in depth explainations to the solutions 
 
 ## <a name="Chapter1" />Chapter 1 - String and Arrays
 
-### <a name="Q1.1" />Problem 1.1 - Is Unique
+## <a name="Q1.1" />Problem 1.1 - Is Unique
 * Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
   * isUnique("water") -> true
   * isUnique("hello") -> false
@@ -69,16 +69,14 @@ public static boolean isUnique(String input) {
 [Back to Top](#Top)
 
 
-### <a name="Q1.2" />Problem 1.2 - Check Permutation
+## <a name="Q1.2" />Problem 1.2 - Check Permutation
 * Given two strings, write a method to decide if one is a permuation of the other. In this problem, we will assume that the comparision is case sesitive and whitespace is significant.
   * permutation("dog", "god") -> true
   * permutation("Dog", "God") -> false
   * permutation("fence", "enfce") -> true
   * permutation("fence", "fences") -> false
-  * permutation("water", "water") -> true
-  * permutation("water", "river") -> false
 
-Just like in [problem 1.1](#Q1.1), we can use the ASCII code technique. See below:
+Just like in [Problem 1.1](#Q1.1), we can use the ASCII code technique. See below:
 
 <img src="images/ASCIITable.png">
 
