@@ -6,7 +6,6 @@ The purpose of this guide is to provide in depth explainations to the solutions 
 * [Chapter 1 - String and Arrays](#Chapter1)
   * [Problem 1.1 - Is Unique](#Q1.1)
   * [Problem 1.2 - Check Permutation](#Q1.2)
-  * [Problem 1.2 - Check Permutation](#Chapter4)
 
 <br/>
 <br/>
@@ -14,10 +13,7 @@ The purpose of this guide is to provide in depth explainations to the solutions 
 <br/>
 <br/>
 
-<h1 align="center" a name="Chapter4" />This is heading 1</h1> 
-abc
-
-# <a name="Chapter1" />Chapter 1 - String and Arrays
+<h1 align="center" a name="Chapter1" />Chapter 1 - String and Arrays</h1> 
 
 ## <a name="Q1.1" />Problem 1.1 - Is Unique
 #### Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
