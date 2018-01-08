@@ -11,11 +11,9 @@ The purpose of this guide is to provide in depth explainations to the solutions 
 <br/>
 <br/>
 <br/>
-<br/>
 
 <h1 align="center" a name="Chapter1" />Chapter 1 - String and Arrays</h1> 
 
-<br/>
 <br/>
 
 ## <a name="Q1.1" />Problem 1.1 - Is Unique
@@ -76,6 +74,7 @@ public static boolean isUnique(String input) {
 
 [Back to Top](#Top)
 
+<br/>
 <br/>
 
 ## <a name="Q1.2" />Problem 1.2 - Check Permutation
@@ -138,3 +137,5 @@ public static boolean permutation(String str1, String str2) {
 
 [Back to Top](#Top)
 
+<br/>
+<br/>
