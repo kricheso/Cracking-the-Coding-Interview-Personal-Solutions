@@ -6,8 +6,8 @@ The purpose of this guide is to provide in depth explainations to the solutions 
 * [Chapter 1 - String and Arrays](#Chapter1)
   * [Problem 1.1 - Is Unique](#Q1.1)
   * [Problem 1.2 - Check Permutation](#Q1.2)
+  * [Problem 1.3 - URLify](#Q1.3)
 
-<br/>
 <br/>
 <br/>
 <br/>
@@ -139,3 +139,71 @@ public static boolean permutation(String str1, String str2) {
 
 <br/>
 <br/>
+
+
+## <a name="Q1.3" />Problem 1.3 - URLify
+#### Write a method to replace all spaces with '%20'. You may assume that the string (array) has sufficient space at the end to hold the additional characters, and that you are given the "true" length of the string. Please perform this operation in place.
+* char[] myArray = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0', '\0'};
+* URLify(myArray, 12) -> Mutates the array to: {'H', 'e', 'l', 'l', 'o', '%', '2', '0', 'W', 'o', 'r', 'l', 'd', '!'}
+
+
+Please note the reason why we are NOT using direct strings for this problem. In Java, strings are immutable. Consider the following code:
+
+```java
+public static void main(String args[]) {
+
+  String myString = "Hello World!";
+  myString = myString.substring(6);
+  
+  //Prints "World!"
+  System.out.println(myString);
+
+}
+```
+
+The myString variable is acutally not being mutated. What myString did was dereferenced itself from the original "Hello World!" string, and made a completely new string: World!". The original string is now left for the garbage collector. Therefore, we cannot mutate strings in this manner. In order to truly mutate strings, we need to use a character array or utilize the StringBuilder class. In this case, we will use the character array method.
+
+One way to approach this problem is to !!!FINSH LATER!!!
+
+```java
+public static void URLify(char[] str, int trueLength) {
+
+  int spaces = 0;
+  int lengthNeeded;
+
+  //Count the number of spaces in the char array
+  for(int i=0; i<trueLength; i++) {
+    if(str[i] == ' ') {
+      spaces++;
+    }
+  }
+
+  //Now find the length needed. Since ' ' -> "%20" we have to add 2 length for each space
+  lengthNeeded = trueLength + spaces * 2;
+  int currentIndex = lengthNeeded - 1;
+
+  //Now we will loop through the char array BACKWARDS to avoid any work we have done to get messed up.
+  for(int i=trueLength-1; i>=0; i--) {
+
+    //If we see a space, insert it into our the char array based on the lengthNeeded variable
+    if(str[i] == ' ') {
+      str[currentIndex] = '0';
+      str[currentIndex-1] = '2';
+      str[currentIndex-2] = '%';
+      currentIndex = currentIndex - 3;
+    }
+
+    //If we don't see a space, copy it from the non-mutated version of the array.
+    else {
+      str[currentIndex] = str[i];
+      currentIndex--;
+    }
+
+  }
+
+}
+```
+
+
+
+
