@@ -161,9 +161,9 @@ public static void main(String args[]) {
 }
 ```
 
-The myString variable is acutally not being mutated. What myString did was dereferenced itself from the original "Hello World!" string, and made a completely new string: World!". The original string is now left for the garbage collector. Therefore, we cannot mutate strings in this manner. In order to truly mutate strings, we need to use a character array or utilize the StringBuilder class. In this case, we will use the character array method.
+The myString variable is acutally not being mutated. What myString did was dereferenced itself from the original "Hello World!" string, and made a completely new string: "World!". The original string is now left for the garbage collector. Therefore, we cannot mutate strings in this manner. In order to truly mutate strings, we need to use a character array or utilize the StringBuilder class. In this case, we will use the character array method.
 
-One way to approach this problem is to !!!FINSH LATER!!!
+One way to approach this problem is to loop through the array and count how many spaces are present. With that information, we then can find the total required amount of spaces. This is done by multiplying spaces by two and added it to trueLength. Then we will store that information in a variable called lengthNeeded and subtract one. This will represent the last index of the final result. Loop through the char array backwards in order to avoid checking modified work. If we see a space, we will insert a '0' into the currentIndex, a '2' in currentIndex-1 and a '%' in currentIndex-3. Then we will decrement currentIndex by 3 in order to point at an index that has not been modified. After the loop ends, currentIndex should be -1 and all the indexes in the array will have been modified.
 
 ```java
 public static void URLify(char[] str, int trueLength) {
@@ -204,6 +204,8 @@ public static void URLify(char[] str, int trueLength) {
 }
 ```
 
+[Back to Top](#Top)
 
-
+<br/>
+<br/>
 
